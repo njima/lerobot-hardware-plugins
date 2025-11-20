@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lerobot_robot_toio"
+version = "0.0.1"
+description = "LeRobot toio robot integration"
+authors = [
+    { name = "FaBo, Inc.", email = "akira@fabo.io" },
+]
+requires-python = ">=3.11,<3.12"
+
+dependencies = [
+    "numpy",
+    "transforms3d",
+    "teleop",
+    "lerobot",
+    "toio-py",
+    "bleak",
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]

@@ -1,0 +1,36 @@
+[project]
+name = "lerobot-hardware-plugins"
+version = "0.1.0"
+description = "LeRobot Hardware Plugins Collection - Extensible hardware integrations for HuggingFace LeRobot framework"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "lerobot",
+    "lerobot-robot-toio",
+    "lerobot-teleoperator-toio",
+    "setuptools>=71.0.0,<81.0.0",
+    "torch==2.7.0",
+    "torchaudio>=2.7.0",
+    "torchvision>=0.22.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/njima/lerobot-hardware-plugins"
+Repository = "https://github.com/njima/lerobot-hardware-plugins"
+Issues = "https://github.com/njima/lerobot-hardware-plugins/issues"
+Documentation = "https://github.com/njima/lerobot-hardware-plugins/blob/master/README.md"
+
+[project.keywords]
+keywords = ["robotics", "lerobot", "hardware", "teleoperation", "toio", "plugins"]
+
+[tool.uv]
+override-dependencies = [
+    "setuptools>=71,<81",
+]
+
+
+[tool.uv.sources]
+lerobot = { git = "https://github.com/huggingface/lerobot.git", rev = "v0.4.1" }
+lerobot-robot-toio        = { path = "lerobot_robots/toio" }
+lerobot-teleoperator-toio = { path = "lerobot_teleoperators/toio" }
