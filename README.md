@@ -169,6 +169,7 @@ Apache License 2.0
 - [🤗 HuggingFace LeRobot](https://github.com/huggingface/lerobot) - メインフレームワーク
 - [📚 LeRobot Hardware Integration Guide](https://huggingface.co/docs/lerobot/integrate_hardware) - 公式統合ガイド
 - [🎲 toio 公式サイト](https://toio.io/) - Sony toio 情報
+- [🎮 toioテレオペレーション解説](https://faboplatform.github.io/LeRobotDocs/core/toio_teleop/) - toio統合の具体的な実装解説
 
 ---
 
